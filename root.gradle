@@ -6,6 +6,7 @@ ext.library = [:]
 
 //== START WITH C
 ext.library['cglib'] = "cglib:cglib:2.2.2"
+ext.library['closure_compiler'] = "com.google.javascript:closure-compiler:rr2079.1"
 ext.library['cobertura'] = "net.saliman:gradle-cobertura-plugin:1.1.1"
 ext.library['commons_configuration'] = "commons-configuration:commons-configuration:1.8"
 ext.library['commons_dbcp'] = "commons-dbcp:commons-dbcp:1.4"
@@ -30,6 +31,7 @@ ext.library['jackson_core'] = "com.fasterxml.jackson.core:jackson-core:2.1.4"
 ext.library['jackson_databind'] = "com.fasterxml.jackson.core:jackson-databind:2.1.4"
 
 // Javax
+ext.library['javax_jsp'] = "javax.servlet.jsp:jsp-api:2.2"
 ext.library['javax_jstl'] = "javax.servlet:jstl:1.2"
 ext.library['javax_servlet'] = "javax.servlet:javax.servlet-api:3.0.1"
 ext.library['javax_validation'] = "javax.validation:validation-api:1.1.0.CR1"
@@ -41,9 +43,6 @@ ext.library['junit'] = "junit:junit:4.10"
 ext.library['log4j'] = "log4j:log4j:1.2.17"
 ext.library['logback_classic'] = "ch.qos.logback:logback-classic:1.0.6"
 ext.library['logback_core'] = "ch.qos.logback:logback-core:1.0.6"
-
-//== START WITH M
-ext.library['model_util'] = "com.bearprogrammer.model:model-util:1.0"
 
 //== START WITH S
 ext.library['slf4j'] = "org.slf4j:slf4j-api:1.6.6"
@@ -70,8 +69,8 @@ ext.library['spring_security_core'] = "org.springframework.security:spring-secur
 ext.library['spring_security_config'] = "org.springframework.security:spring-security-config:$VERSION_SPRING_SECURITY"
 ext.library['spring_security_web'] = "org.springframework.security:spring-security-web:$VERSION_SPRING_SECURITY"
 
-//== START WITH U
-ext.library['user'] = "com.bearprogrammer.model:user:1.0"
+//== START WITH Y
+ext.library['yui_compressor'] = "com.yahoo.platform.yui:yuicompressor:2.4.7"
 
 configurations.all{
 	resolutionStrategy {
