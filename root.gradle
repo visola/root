@@ -1,0 +1,84 @@
+//=== VERSION NUMBERS ===
+ext.VERSION_SPRING = '3.2.1.RELEASE'
+ext.VERSION_SPRING_SECURITY = '3.1.1.RELEASE'
+
+ext.library = [:]
+
+//== START WITH C
+ext.library['cglib'] = "cglib:cglib:2.2.2"
+ext.library['cobertura'] = "net.saliman:gradle-cobertura-plugin:1.1.1"
+ext.library['commons_configuration'] = "commons-configuration:commons-configuration:1.8"
+ext.library['commons_dbcp'] = "commons-dbcp:commons-dbcp:1.4"
+ext.library['commons_logging'] = "commons-logging:commons-logging-api:1.1"
+ext.library['commons_io'] = "org.apache.commons:commons-io:1.3.2"
+
+//== START WITH G
+ext.library['groovy'] = "org.codehaus.groovy:groovy:2.1.1"
+ext.library['groovy_xml'] = "org.codehaus.groovy:groovy-xml:2.1.1"
+
+//== START WITH H
+ext.library['h2_database'] = "com.h2database:h2:1.3.166"
+ext.library['hibernate_entity_manager'] = "org.hibernate:hibernate-entitymanager:4.1.4.Final"
+ext.library['hibernate_jpa'] = "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final"
+ext.library['hibernate_validator'] = "org.hibernate:hibernate-validator:4.2.0.Final"
+
+//== START WITH J
+
+// Jackson JSON
+ext.library['jackson_annotations'] = "com.fasterxml.jackson.core:jackson-annotations:2.1.4"
+ext.library['jackson_core'] = "com.fasterxml.jackson.core:jackson-core:2.1.4"
+ext.library['jackson_databind'] = "com.fasterxml.jackson.core:jackson-databind:2.1.4"
+
+// Javax
+ext.library['javax_jstl'] = "javax.servlet:jstl:1.2"
+ext.library['javax_servlet'] = "javax.servlet:javax.servlet-api:3.0.1"
+ext.library['javax_validation'] = "javax.validation:validation-api:1.1.0.CR1"
+
+ext.library['jmockit'] = "com.googlecode.jmockit:jmockit:0.999.16"
+ext.library['junit'] = "junit:junit:4.10"
+
+//== START WITH L
+ext.library['log4j'] = "log4j:log4j:1.2.17"
+ext.library['logback_classic'] = "ch.qos.logback:logback-classic:1.0.6"
+ext.library['logback_core'] = "ch.qos.logback:logback-core:1.0.6"
+
+//== START WITH M
+ext.library['model_util'] = "com.bearprogrammer.model:model-util:1.0"
+
+//== START WITH S
+ext.library['slf4j'] = "org.slf4j:slf4j-api:1.6.6"
+
+// Spring data
+ext.library['spring_data'] = "org.springframework.data:spring-data-commons-core:1.3.1.RELEASE"
+ext.library['spring_data_jpa'] = "org.springframework.data:spring-data-jpa:1.1.0.RELEASE"
+
+// Spring
+ext.library['spring_aop'] = "org.springframework:spring-aop:$VERSION_SPRING"
+ext.library['spring_asm'] = "org.springframework:spring-asm:$VERSION_SPRING"
+ext.library['spring_beans'] = "org.springframework:spring-beans:$VERSION_SPRING"
+ext.library['spring_context'] = "org.springframework:spring-context:$VERSION_SPRING"
+ext.library['spring__core'] = "org.springframework:spring-core:$VERSION_SPRING"
+ext.library['spring_expression'] = "org.springframework:spring-expression:$VERSION_SPRING"
+ext.library['spring_orm'] = "org.springframework:spring-orm:$VERSION_SPRING"
+ext.library['spring_tx'] = "org.springframework:spring-tx:$VERSION_SPRING"
+ext.library['spring_test'] = "org.springframework:spring-test:$VERSION_SPRING"
+ext.library['spring_web'] = "org.springframework:spring-web:$VERSION_SPRING"
+ext.library['spring_webmvc'] = "org.springframework:spring-webmvc:$VERSION_SPRING"
+
+// Spring Security
+ext.library['spring_security_core'] = "org.springframework.security:spring-security-core:$VERSION_SPRING_SECURITY"
+ext.library['spring_security_config'] = "org.springframework.security:spring-security-config:$VERSION_SPRING_SECURITY"
+ext.library['spring_security_web'] = "org.springframework.security:spring-security-web:$VERSION_SPRING_SECURITY"
+
+//== START WITH U
+ext.library['user'] = "com.bearprogrammer.model:user:1.0"
+
+configurations.all{
+	resolutionStrategy {
+		forcedModules = project.ext.library.values()		
+	}
+}
+
+//=== GENERAL CONFIGURATION ===
+cobertura.coverageFormats = ['xml', 'html'] // Cobertura format
+sourceCompatibility = '1.6' // Java version
