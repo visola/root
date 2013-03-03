@@ -4,7 +4,7 @@ ext.VERSION_SPRING_SECURITY = '3.1.1.RELEASE'
 
 ext.library = [:]
 
-//== START WITH C
+//== CCCCCC ==
 ext.library['cglib'] = "cglib:cglib:2.2.2"
 ext.library['closure_compiler'] = "com.google.javascript:closure-compiler:rr2079.1"
 ext.library['cobertura'] = "net.saliman:gradle-cobertura-plugin:1.1.1"
@@ -13,17 +13,17 @@ ext.library['commons_dbcp'] = "commons-dbcp:commons-dbcp:1.4"
 ext.library['commons_logging'] = "commons-logging:commons-logging-api:1.1"
 ext.library['commons_io'] = "org.apache.commons:commons-io:1.3.2"
 
-//== START WITH G
+//== GGGGGG ==
 ext.library['groovy'] = "org.codehaus.groovy:groovy:2.1.1"
 ext.library['groovy_xml'] = "org.codehaus.groovy:groovy-xml:2.1.1"
 
-//== START WITH H
+//== HHHHHH ==
 ext.library['h2_database'] = "com.h2database:h2:1.3.166"
 ext.library['hibernate_entity_manager'] = "org.hibernate:hibernate-entitymanager:4.1.4.Final"
 ext.library['hibernate_jpa'] = "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final"
 ext.library['hibernate_validator'] = "org.hibernate:hibernate-validator:4.2.0.Final"
 
-//== START WITH J
+//== JJJJJJ ==
 
 // Jackson JSON
 ext.library['jackson_old_mapper'] = "org.codehaus.jackson:jackson-mapper-asl:1.9.11"
@@ -40,12 +40,15 @@ ext.library['javax_validation'] = "javax.validation:validation-api:1.1.0.CR1"
 ext.library['jmockit'] = "com.googlecode.jmockit:jmockit:0.999.16"
 ext.library['junit'] = "junit:junit:4.10"
 
-//== START WITH L
+//== LLLLLL ==
 ext.library['log4j'] = "log4j:log4j:1.2.17"
 ext.library['logback_classic'] = "ch.qos.logback:logback-classic:1.0.6"
 ext.library['logback_core'] = "ch.qos.logback:logback-core:1.0.6"
 
-//== START WITH S
+//== MMMMMM ==
+ext.library['mysql_driver'] = "mysql:mysql-connector-java:5.1.23"
+
+//== SSSSSS =
 ext.library['slf4j'] = "org.slf4j:slf4j-api:1.6.6"
 
 // Spring data
@@ -71,9 +74,10 @@ ext.library['spring_security_core'] = "org.springframework.security:spring-secur
 ext.library['spring_security_config'] = "org.springframework.security:spring-security-config:$VERSION_SPRING_SECURITY"
 ext.library['spring_security_web'] = "org.springframework.security:spring-security-web:$VERSION_SPRING_SECURITY"
 
-//== START WITH Y
+//== YYYYYY ==
 ext.library['yui_compressor'] = "com.yahoo.platform.yui:yuicompressor:2.4.7"
 
+// Force all dependency versions to be the ones listed here
 configurations.all{
 	resolutionStrategy {
 		forcedModules = project.ext.library.values()		
