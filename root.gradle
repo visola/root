@@ -77,6 +77,9 @@ ext.library['spring_security_core'] = "org.springframework.security:spring-secur
 ext.library['spring_security_config'] = "org.springframework.security:spring-security-config:$VERSION_SPRING_SECURITY"
 ext.library['spring_security_web'] = "org.springframework.security:spring-security-web:$VERSION_SPRING_SECURITY"
 
+// Spring Security Open ID provider
+ext.library['spring_security_openid'] = "org.springframework.security:spring-security-samples-openid:3.0.7.RELEASE"
+
 //== YYYYYY ==
 ext.library['yui_compressor'] = "com.yahoo.platform.yui:yuicompressor:2.4.7"
 
