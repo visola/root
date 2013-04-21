@@ -92,4 +92,3 @@ configurations.all{
 
 //=== GENERAL CONFIGURATION ===
 cobertura.coverageFormats = ['xml', 'html'] // Cobertura format
-sourceCompatibility = '1.6' // Java version
