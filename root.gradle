@@ -87,9 +87,6 @@ ext.library['yui_compressor'] = "com.yahoo.platform.yui:yuicompressor:2.4.7"
 // Force all dependency versions to be the ones listed here
 configurations.all{
 	resolutionStrategy {
-		forcedModules = project.ext.library.values()		
+		forcedModules = project.ext.library.values()
 	}
 }
-
-//=== GENERAL CONFIGURATION ===
-cobertura.coverageFormats = ['xml', 'html'] // Cobertura format
