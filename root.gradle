@@ -8,6 +8,7 @@ ext.library = [:]
 ext.library['cglib'] = "cglib:cglib:2.2.2"
 ext.library['closure_compiler'] = "com.google.javascript:closure-compiler:rr2079.1"
 ext.library['cobertura'] = "net.saliman:gradle-cobertura-plugin:1.1.1"
+ext.library['commons_codec'] = "commons-codec:commons-codec:1.8"
 ext.library['commons_configuration'] = "commons-configuration:commons-configuration:1.8"
 ext.library['commons_dbcp'] = "commons-dbcp:commons-dbcp:1.4"
 ext.library['commons_logging'] = "commons-logging:commons-logging-api:1.1"
