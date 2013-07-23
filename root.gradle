@@ -14,6 +14,9 @@ ext.library['commons_dbcp'] = "commons-dbcp:commons-dbcp:1.4"
 ext.library['commons_logging'] = "commons-logging:commons-logging-api:1.1"
 ext.library['commons_io'] = "org.apache.commons:commons-io:1.3.2"
 
+//== EEEEEE ==
+ext.library['eclipse_link'] = "org.eclipse.persistence:eclipselink:2.5.0"
+
 //== FFFFFF ==
 ext.library['flyway_core'] = "com.googlecode.flyway:flyway-core:2.1.1"
 
