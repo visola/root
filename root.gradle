@@ -61,7 +61,7 @@ ext.library['slf4j'] = "org.slf4j:slf4j-api:1.6.6"
 
 // Spring data
 ext.library['spring_data'] = "org.springframework.data:spring-data-commons:1.6.1.RELEASE"
-ext.library['spring_data_jpa'] = "org.springframework.data:spring-data-jpa:1.4.0.RELEASE"
+ext.library['spring_data_jpa'] = "org.springframework.data:spring-data-jpa:1.4.1.RELEASE"
 
 // Spring
 ext.library['spring_aop'] = "org.springframework:spring-aop:$VERSION_SPRING"
